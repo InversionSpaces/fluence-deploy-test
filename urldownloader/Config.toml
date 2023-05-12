@@ -1,0 +1,22 @@
+[[module]]
+name = "fs"
+load_from = "/home/inv/Desktop/work/url-downloader/target/wasm32-wasi/release/fs.wasm"
+
+[module.wasi.mapped_dirs]
+sites = "./tmp"
+
+[[module]]
+name = "curl"
+load_from = "/home/inv/Desktop/work/url-downloader/target/wasm32-wasi/release/curl.wasm"
+logger_enabled = true
+
+[module.mounted_binaries]
+curl = "/usr/bin/curl"
+
+[[module]]
+name = "httpprepend"
+load_from = "/home/inv/Desktop/work/url-downloader/target/wasm32-wasi/release/httpprepend.wasm"
+
+[[module]]
+name = "urldownloader"
+load_from = "/home/inv/Desktop/work/url-downloader/target/wasm32-wasi/release/urldownloader.wasm"

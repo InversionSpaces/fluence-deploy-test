@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "urldownloader/modules/fs",
+  "urldownloader/modules/curl",
+  "urldownloader/modules/httpprepend",
+  "urldownloader/modules/urldownloader"
+]
